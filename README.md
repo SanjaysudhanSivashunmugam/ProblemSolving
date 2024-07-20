@@ -33,3 +33,27 @@
 [![YouTube video player](https://img.youtube.com/vi/TYT5TJSfGlo/0.jpg)](https://www.youtube.com/watch?v=TYT5TJSfGlo)
 
 ### [LeetCode Problem Link](https://leetcode.com/problems/rotate-array)
+
+---
+### Day 2 (20/07/2024):
+
+#### 2) Matrix Diagonal Sum
+```java
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int sum = 0;
+        for(int i =0;i<mat.length;i++){
+            for(int j = 0;j<mat[i].length;j++){
+                if(i == j)
+                 sum +=mat[i][j]; 
+                if ((i+j) == mat.length-1 && i!=j)
+                 sum+=mat[i][j];
+            }
+        }
+        return sum;
+    }
+}
+// CODED BY SANJAYSUDHAN S
+```
+### [LeetCode Problem Link](https://leetcode.com/problems/matrix-diagonal-sum)
+---
