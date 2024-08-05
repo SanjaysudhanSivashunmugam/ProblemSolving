@@ -81,3 +81,25 @@ class Solution {
 ```
 ### [LeetCode Problem Link](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/description/)
 ---
+### Day 4  (05/08/2024):
+
+#### 4) Middle of the Linked List
+```java
+class Solution {
+    public ListNode middleNode(ListNode head) {
+        ListNode t1 = head;
+        int c = 0;
+        while(t1!=null){
+            c++;
+            t1=t1.next;
+        }
+        c/=2;
+        for(int i =0;i<c;i++){
+            head = head.next;
+        }
+        return head;
+    }
+}
+```
+### [LeetCode Problem Link](https://leetcode.com/problems/middle-of-the-linked-list/description/)
+---
