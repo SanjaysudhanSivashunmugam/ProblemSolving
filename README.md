@@ -103,3 +103,27 @@ class Solution {
 ```
 ### [LeetCode Problem Link](https://leetcode.com/problems/middle-of-the-linked-list/description/)
 ---
+### Day 5  (13/08/2024):
+
+#### 5) Reverse a linked list
+```java
+class Solution {
+    // Function to reverse a linked list.
+    Node reverseList(Node head) {
+        // code here
+        Node prev = null;
+        Node next = null;
+        Node curr = head;
+        while(curr!=null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+        return head;
+    }
+}
+```
+### [Problem Link](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1?page=1&category=Linked%20List&sortBy=submissions)
+---
