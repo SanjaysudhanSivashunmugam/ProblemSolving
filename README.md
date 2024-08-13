@@ -125,5 +125,7 @@ class Solution {
     }
 }
 ```
-### [Problem Link](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1?page=1&category=Linked%20List&sortBy=submissions)
+### [GFG Problem Link](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1?page=1&category=Linked%20List&sortBy=submissions)
+### [LeetCode Problem Link](https://leetcode.com/problems/reverse-linked-list/)
+
 ---
