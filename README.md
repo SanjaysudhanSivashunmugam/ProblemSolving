@@ -129,3 +129,28 @@ class Solution {
 ### [LeetCode Problem Link](https://leetcode.com/problems/reverse-linked-list/)
 
 ---
+### Day 6  (14/08/2024):
+
+#### 6) Reverse a linked list
+```java
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head == null) 
+            return head;
+        ListNode temp = head;
+        while(temp.next!=null){
+            if(temp.val==temp.next.val){
+                temp.next = temp.next.next;
+            }
+            else{
+            temp = temp.next;
+            }
+        }
+        return head;
+    }
+}
+```
+### [GFG Problem Link](https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1?page=1&category=Linked%20List&sortBy=submissions)
+### [LeetCode Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+
+---
