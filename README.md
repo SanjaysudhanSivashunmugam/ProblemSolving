@@ -154,3 +154,42 @@ class Solution {
 ### [LeetCode Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
 
 ---
+### Day 7  (15/08/2024):
+
+#### 7) Odd Even Linked List
+```java
+class Solution {
+    public ListNode oddEvenList(ListNode head) {
+        if(head == null) return null;
+        if(head.next == null) return head;
+
+        ListNode oddHead = new ListNode(0);
+        ListNode evenHead = new ListNode(0); 
+        ListNode odd = oddHead;
+        ListNode even = evenHead;
+
+        ListNode current = head;
+
+        int i = 1;
+        while(current != null){
+            if(i % 2 == 0) {
+                even.next = current;
+                even = even.next;
+            } else {
+                odd.next = current;
+                odd = odd.next;
+            }
+            current = current.next;
+            i++;
+        }
+
+        even.next = null;
+        odd.next = evenHead.next;
+
+        return oddHead.next;
+    }
+}
+```
+### [LeetCode Problem Link](https://leetcode.com/problems/odd-even-linked-list/description/)
+
+---
